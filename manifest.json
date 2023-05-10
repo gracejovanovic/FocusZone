@@ -1,0 +1,10 @@
+{
+    "name": "Focus Mode",
+    "version":"1.0",
+    "manifest_version": 3,
+    "description": "Extension to block distractions",
+    "action": {
+        "default_icon": "shh.png",
+        "default_popup": "index.html"
+    }
+}
