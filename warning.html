@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warning</title>
+    <style>
+        body {
+            background-color: #FF5733;
+            margin: 0;
+            padding: 0;
+        }
+        .warning-container {
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+        }
+        .warning-container p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="warning-container">
+        <p>You're in Focus Mode. The website <span id="blocked-url"></span>is currently blocked!</p>
+    </div>
+    <script>
+        //get blocked url from query
+        const urlParams = new URLSearchParams(window.location.search);
+        const blockedUrl = urlParams.get('url');
+
+        //set blocked url to warning message
+        const blockedUrlElement = document.getElementById('blocked-url');
+        blockedUrlElement.textContent = blockedUrl;
+    </script>
+
+</body>
+</html>

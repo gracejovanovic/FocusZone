@@ -4,7 +4,7 @@
     "manifest_version": 3,
     "description": "Extension to block distractions",
     "action": {
-        "default_icon": "shh.png",
+        "default_icon": "shhh.png",
         "default_popup": "index.html"
     }
 }
